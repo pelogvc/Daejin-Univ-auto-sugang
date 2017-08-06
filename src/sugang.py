@@ -65,6 +65,9 @@ class sugang(object):
 
         res = requests.post(url, data = data, headers = header, cookies = self.cookie)
 
+        if res.cookies:
+            self.cookie = res.cookies
+
         if res.status_code == 200 and res.content.find("과목이 수강 신청되었습니다") :
             return True
         else:
