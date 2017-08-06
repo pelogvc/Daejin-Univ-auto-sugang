@@ -26,7 +26,7 @@ class sugang(object):
         url = "http://dreams2.daejin.ac.kr/sugang/LoginB"
         header = {
             "User-Agent" : self.agent ,
-            "referer"    : "http://dreams2.daejin.ac.kr"
+            "Referer"    : "http://dreams2.daejin.ac.kr"
         }
         data = {
             "user_flag"  : 1 ,
@@ -52,7 +52,7 @@ class sugang(object):
         url = "http://dreams2.daejin.ac.kr/sugang/SugangWlsn0410"
         header = {
             "User-Agent" : self.agent ,
-            "referer"    : "http://dreams2.daejin.ac.kr"
+            "Referer"    : "http://dreams2.daejin.ac.kr/sugang/nsugang_direct2_new.jsp"
         }
         data = {
             "dir"       : "1" ,
